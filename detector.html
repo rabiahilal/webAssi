@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas, Humidity, Temperature Detector - Project Details</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #1c1c1c;
+            color: #fff;
+            scroll-behavior: smooth;
+            transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: fixed;
+            width: 100%;
+            background: #000;
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease-in-out;
+            text-decoration: underline;
+        }
+
+        nav a:hover {
+            color: #a29bfe;
+        }
+
+        /* Project Details Section */
+        .project-details {
+            max-width: 800px;
+            margin: 150px auto 50px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+
+        .project-details h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .project-details p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .project-details ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .project-details li {
+            background: #6c5ce7;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .project-image {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: #6c5ce7;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .download-btn:hover {
+            background: #a29bfe;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #6c5ce7;
+            color: white;
+            margin-top: 50px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav style="position: fixed; top: 0; width: 100%; background: #000; padding: 15px 0; text-align: center; z-index: 1000;">
+        <a href="CV.html">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+
+
+    <section class="project-details">
+        <h1>Gas, Humidity, Temperature Detector</h1>
+        <img src="images/detector.jpg" alt="Detector Project" class="project-image">
+        <p>This project is a real-time environmental monitoring system designed to measure gas levels, humidity, and temperature. It features advanced sensors and remote alert capabilities, providing essential data for safety and environmental awareness.</p>
+        <ul>
+            <li><strong>Technologies Used:</strong> Embedded Systems, Sensor Integration, Remote Monitoring</li>
+            <li><strong>Features:</strong>
+                <ul>
+                    <li>Real-time Gas Detection</li>
+                    <li>Humidity and Temperature Monitoring</li>
+                    <li>Remote Alerts and Notifications</li>
+                </ul>
+            </li>
+        </ul>
+        <a href="pdfs/detector-project.pdf" class="download-btn" target="_blank">📄 Download Project PDF</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rabia Hilal. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetSection = document.querySelector(this.getAttribute('href'));
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
